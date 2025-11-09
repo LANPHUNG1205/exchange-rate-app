@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  forex-app-backend:
+    image: 'forex-app-backend:latest'
+    build:
+      context: ./
+      dockerfile: ./backend/Dockerfile
+    container_name: forex-app-backend
+    depends_on:
+      - forex-db
+    environment:
+      - SPRING_PROFILES_ACTIVE=container
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://forex-db:5432/forex_db
+      - SPRING_DATASOURCE_USERNAME=forex_user
+      - SPRING_DATASOURCE_PASSWORD=forex_pass
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=validate
+    ports:
+      - "8080:8080"
+
+  forex-db:
+    image: 'postgres:13.1-alpine'
+    container_name: forex-db
+    environment:
+      - POSTGRES_DB=forex_db
+      - POSTGRES_USER=forex_user
+      - POSTGRES_PASSWORD=forex_pass
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

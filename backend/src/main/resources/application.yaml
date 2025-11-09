@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: forex
+
+  profiles:
+    group:
+      default: local
+
+  datasource:
+    url: jdbc:postgresql://forex-db:5432/forex_db
+    username: forex_user
+    password: forex_pass
+
+  jpa:
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: validate

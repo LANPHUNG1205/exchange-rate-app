@@ -1,0 +1,6 @@
+spring:
+
+  datasource:
+    url: jdbc:postgresql://forex-db:5432/forex_db
+    username: forex_user
+    password: forex_pass
