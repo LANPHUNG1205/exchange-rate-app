@@ -84,7 +84,6 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "Spring Boot.ForexApplication.executor": "Debug",
-    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/ngph/projects/private projects/exchange-rate-app/backend/src/main/docker",
     "node.js.detected.package.eslint": "true",
@@ -125,6 +124,9 @@
       </set>
     </attachedChunks>
   </component>
+  <component name="StructureViewState">
+    <option name="selectedTab" value="Logical" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="4c23eaaf-e0d6-47b9-9404-2c24ed56442c" name="Changes" comment="" />
@@ -137,7 +139,7 @@
       <workItem from="1762542448056" duration="2078000" />
       <workItem from="1762634284368" duration="626000" />
       <workItem from="1762690569706" duration="6190000" />
-      <workItem from="1762697859946" duration="867000" />
+      <workItem from="1762697859946" duration="1246000" />
     </task>
     <servers />
   </component>
